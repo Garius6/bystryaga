@@ -93,7 +93,7 @@
 	))
 	пер тело = json.сериализовать(документ)
 	функ(зм: http.ЗапросМаршрута) -> http.ОтветСервера
-		http.ОтветСервера(200, "application/json", тело)
+		http.ответ(200, "application/json", тело)
 	конец
 конец
 
@@ -110,6 +110,6 @@
 		"<script>window.onload = function() { SwaggerUIBundle({ url: \"/openapi.json\", dom_id: \"#swagger-ui\" }) }</script>" +
 		"</body></html>"
 	функ(зм: http.ЗапросМаршрута) -> http.ОтветСервера
-		http.ОтветСервера(200, "text/html", страница)
+		http.ответ(200, "text/html", страница)
 	конец
 конец
